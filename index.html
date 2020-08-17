@@ -2,9 +2,15 @@
 <html >
 <head>
     <title>Curso Vue</title>
+    <style>
+        [v-cloak]{
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <div id="app"> 
+        <p v-cloak>{{title}}</p>
         <hello-world></hello-world>
         <vue-directives></vue-directives>
         
@@ -19,10 +25,19 @@
 <script src="./components/DirectiveOn.js"></script>
 <script src="./components/tarea.js"></script>
 <script src="./components/DirectiveModel.js"></script>
+<script src="./components/SlotComponents/buttonComp.js"></script>
+<script src="./components/DirectiveSlot.js"></script>
+<script src="./components/DirectivePre.js"></script>
+<script src="./components/DirectiveOnce.js"></script>
 <script src="./components/veuDirectivas.js"></script>
 <script >
     new Vue({
-        el: '#app'
+        el: '#app',
+        data(){
+            return{
+                title: 'Directivas JS v-cloack'
+            }
+        }
        
     })
 </script>

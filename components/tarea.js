@@ -1,9 +1,9 @@
 let saludar_comp={
-    template:`<header @click="upps">
-            <h1 v-text="title"> </h1>
+    template:`<div @click="upps">
+                <h1 v-text="title"> </h1>
             
-            <button @click.stop="saludar">saludar</button>
-            </header>`,
+                <button @click.stop="saludar">saludar</button>
+            </div>`,
             
     data(){
         return{

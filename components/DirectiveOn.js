@@ -6,7 +6,8 @@ let DirectiveOn={
             <br>
             <p v-text="pelicula"></p>
             <button @click.stop="comprarEntrada"> Comprar entrada</button>
-            disponibles <span v-text="enter"></span>`,
+            disponibles <span v-text="enter"></span> 
+            </header>`,
             /////@click.stop el estop impide que el clic se propage a active la funcion de hearder
     data(){
         return{
