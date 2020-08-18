@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Props</title>
+</head>
+<body>
+    <div id="app">
+         
+        <props-comp> </props-comp>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./components/movies/movieComp.js"></script>
+    <script src="./computedComponents/PrupsComponents.js"></script>
+
+    <script>
+        let mv = new Vue({
+            el:'#app',
+            data(){
+                return{
+                    title: 'Compartiendo data a componentes hijps [props]'
+                }
+            }
+        })
+    </script>
+    
+</body>
+</html>

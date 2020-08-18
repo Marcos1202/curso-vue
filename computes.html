@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Computes</title>
+</head>
+<body>
+    <div id="app">
+        <computed-properties> 
+        </computed-properties>
+        <computed-properties-get-set> 
+        
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./computedComponents/ComputedProperties.js"></script>
+    <script src="./computedComponents/ComputerPropiertiesGetSet.js"></script>
+    
+    <script>
+        let mv = new Vue({
+            el:'#app',
+            data(){
+                return{
+                    title: 'Computed properties'
+                }
+            }
+        })
+    </script>
+    
+</body>
+</html>
