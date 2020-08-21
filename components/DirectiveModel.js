@@ -14,9 +14,6 @@ let DirectiveModel ={
         <input :value="movie" type="checkbox" v-model="favoritasMovies">
         {{ movie }}
     </lavel>
-   
-    
-    
     <div v-show="favoritasMovies.length">
         <h2 >Peliculas favoritas</h2>
         <ul>

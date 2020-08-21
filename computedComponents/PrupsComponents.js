@@ -8,11 +8,12 @@ Vue.component('props-comp', {
                     :title="movie.title" 
                     :synopsis="movie.synopsis" 
                     :cover="movie.cover"
-                    :like="movie.like"
-                    @toggleLive="onToggloeLike"
+                    :like.sync="movie.like"
+                   
                     
                     />
             </div>`,
+            //:like.sync="movie.like"
     data(){
         return{
             movies: [
@@ -43,9 +44,11 @@ Vue.component('props-comp', {
     components:{
         MovieComp
     },
-    methos: {
-        onToggloeLike(like){
-            this.like = like
+     methods: {
+        onToggloeLike(data){
+            let moviesLike = this.movies.find(movie => movie.id == data.id)
+            moviesLike.like = data.like
+            //this.like = like 
         }
-    }
+    } 
 })
